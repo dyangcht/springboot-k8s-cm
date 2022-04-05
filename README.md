@@ -6,6 +6,8 @@
 4. Create a ConfigMap for the preperty files, application and mysql
 5. mount the ConfigMap to the deployment
 6. Set the path of the properties. The default "deployments/config" doesn't work, so I need to assign it manually.
+   Refer to this: https://developers.redhat.com/blog/2017/10/03/configuring-spring-boot-kubernetes-configmap
+   It's not working, so I set the JAVA_ARGS
 
 ```
 oc new-project k8s 
