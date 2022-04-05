@@ -11,16 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Desc: Spring-boot 调用配置文件 Controller
- * Auther: wanyang3
- * Date: 2019-04-22
- * Time: 13:50
- */
+
 @RestController
 @RequestMapping("/demo")
 @PropertySource("classpath:mysql.properties")
-@Api(tags = "DemoController", description = "测试读取不同资源文件")
+@Api(tags = "DemoController", description = "測試讀取不冋的資源文件")
 public class DemoController {
 
     @Value("${env}")
@@ -32,7 +27,7 @@ public class DemoController {
     @Value("${mysql.port}")
     private String mysql_port;
 
-    @ApiOperation(value = "获取配置文件变量")
+    @ApiOperation(value = "獲取配置文件的變數")
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Map<String, Object> getDemoKey() {
         Map<String, Object> map = new HashMap<>();
