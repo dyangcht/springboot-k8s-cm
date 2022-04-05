@@ -1,5 +1,7 @@
 # springboot-k8s-cm
 
+WORKDIR: ~/opt/redhat/ocp4/training/tekton/spring-k8s-configmap-demo
+
 1. Create a new project "k8s"
 2. Create a new application "spring-test"
 3. Expose a route
