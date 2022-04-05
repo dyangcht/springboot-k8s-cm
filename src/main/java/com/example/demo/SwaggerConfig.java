@@ -10,12 +10,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * Desc: Swagger 配置
- * Auther: wanyang3
- * Date: 2019-04-19
- * Time: 18:48
- */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -32,8 +26,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("spring-boot 测试 demo 项目在线文档")
-                .description("spring-boot 项目在 k8s 中以 configMap 方式测试加载 application.properties ")
+                .title("spring-boot 測試 demo 專案文件")
+                .description("spring-boot 專案在 ocp 中以 configMap 方式測試載入 application.properties ")
                 .termsOfServiceUrl("")
                 .version("1.0")
                 .build();
